@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 [RequireComponent(typeof(SpriteRenderer), typeof(CircleCollider2D), typeof(Rigidbody2D))]
+[RequireComponent(typeof(NetworkTransform))]
 public class AntBase : NetworkBehaviour
 {
     private Transform _Base;

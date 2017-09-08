@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(NetworkTransform))]
 public class BaseBuilding : NetworkBehaviour
 {
     public const int INIT_ANTS = 3;

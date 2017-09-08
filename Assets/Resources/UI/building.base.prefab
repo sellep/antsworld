@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 212694182460698800}
   - component: {fileID: 61598459945300630}
   - component: {fileID: 114209328488096030}
+  - component: {fileID: 114037445714203766}
+  - component: {fileID: 114861351625326616}
   m_Layer: 0
   m_Name: building.base
   m_TagString: Untagged
@@ -67,6 +69,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.641135, y: 0.23599291}
   m_EdgeRadius: 0
+--- !u!114 &114037445714203766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1296085631001218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 143
+    i1: 74
+    i2: 62
+    i3: 194
+    i4: 174
+    i5: 14
+    i6: 128
+    i7: 180
+    i8: 139
+    i9: 4
+    i10: 38
+    i11: 89
+    i12: 198
+    i13: 51
+    i14: 153
+    i15: 211
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!114 &114209328488096030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,6 +120,27 @@ MonoBehaviour:
   BuilderAnts: 0
   WorkerAnts: 0
   CarrierAnts: 0
+--- !u!114 &114861351625326616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1296085631001218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!212 &212694182460698800
 SpriteRenderer:
   m_ObjectHideFlags: 1

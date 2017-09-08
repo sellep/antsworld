@@ -26,22 +26,18 @@ public static class BaseProperty
         if (_Property != null)
             return;
 
-        //RectTransform rect = prefab.GetComponent<RectTransform>();
+        //GameObject prefab = Resources.Load<GameObject>("UI/property.base");
+        //Transform parent = GameObject.Find("UI").transform;
 
-        //rect.anchorMax = new Vector2(1, 0.5f);
-        //rect.anchorMin = new Vector2(1, 0.5f);
+        //_Property = UnityEngine.Object.Instantiate(prefab, parent);
+        //_Property.name = "Property.Base";
+        //_Property.SetActive(false);
 
-        //rect.anchoredPosition = new Vector2(-100, 0);
-
-        _Property = UnityEngine.Object.Instantiate((GameObject)Resources.Load("UI/property.base", typeof(GameObject)), GameObject.Find("UI").transform);
-        _Property.name = "Property.Base";
-        _Property.SetActive(false);
-
-        _ProgressBar = _Property.transform.Find("Progress").GetComponent<ProgressBehavior>();
-        _FreeCurrent = _Property.transform.Find("Free/Current").GetComponent<Text>();
-        _FreeSlider = _Property.transform.Find("Free/Slider").GetComponent<Slider>();
-        _BuilderCurrent = _Property.transform.Find("Builder/Current").GetComponent<Text>();
-        _BuilderSlider = _Property.transform.Find("Builder/Slider").GetComponent<Slider>();
+        //_ProgressBar = _Property.transform.Find("Progress").GetComponent<ProgressBehavior>();
+        //_FreeCurrent = _Property.transform.Find("Free/Current").GetComponent<Text>();
+        //_FreeSlider = _Property.transform.Find("Free/Slider").GetComponent<Slider>();
+        //_BuilderCurrent = _Property.transform.Find("Builder/Current").GetComponent<Text>();
+        //_BuilderSlider = _Property.transform.Find("Builder/Slider").GetComponent<Slider>();
 
         //_BuilderSlider.onValueChanged.AddListener(OnBuilderSliderMove);
     }
